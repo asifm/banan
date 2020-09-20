@@ -1,9 +1,10 @@
 {
-  "name": "SpellBangla-Netlify",
+  "name": "spellbangla",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
