@@ -6,8 +6,8 @@ const path = require('path');
 const Nodehun = require('nodehun');
 
 // todo: move dict folder outside of functions folder since netlify complains when deploying
-const affbuf = fs.readFileSync('dict/bn_BD.aff');
-const dictbuf = fs.readFileSync('dict/bn_BD.dic');
+const affbuf = fs.readFileSync(require.resolve('./dict/bn_BD.aff'));
+const dictbuf = fs.readFileSync(require.resolve('./dict/bn_BD.dic'));
 const nodehun = new Nodehun(affbuf, dictbuf);
 
 exports.handler = async (event, context, callback) => {
